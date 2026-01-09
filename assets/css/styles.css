@@ -1,0 +1,159 @@
+.home-banner-section {
+    height: 100vh;
+    width: 100%;
+    padding: 15px;
+}
+
+.home-banner-section .inner-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.home-banner-section .carousels-grid-container {
+    display: grid;
+    grid-template-columns: 66% 34%;
+    height: 100%;
+    width: 100%;
+}
+
+.home-banner-section .carousels-grid-container .carousel-one-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.home-banner-section .carousels-grid-container .carousel-one-container .overlay-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.212);
+    backdrop-filter: blur(0px);
+    padding: 70px 40px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.home-banner-section .carousels-grid-container .carousel-one-container .overlay-container .label {
+    font-size: 20px;
+    color: #fff;
+    height: auto;
+    margin-bottom: 0;
+}
+
+.home-banner-section .carousels-grid-container .carousel-one-container .overlay-container .main-title {
+    font-size: 80px;
+    font-weight: 800;
+    color: #ffffffe6;
+    height: auto;
+    margin-bottom: 0;
+    line-height: 90px;
+}
+
+.home-banner-section .carousel-one-container * {
+    height: 100%;
+}
+
+.home-banner-section .right-carousel-main-container {
+    height: 70%;
+}
+
+.home-banner-section .right-carousel-main-container .right-grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100%;
+}
+
+.home-banner-section .right-carousel-main-container .right-grid-container .carousel-two-container {
+    width: 100%;
+    height: 100%;
+}
+
+.home-banner-section .right-grid-container * {
+    height: 100%;
+}
+
+.home-banner-section .right-carousel-main-container .right-grid-container .carousel-three-container {
+    width: 100%;
+    height: 100%;
+}
+
+.home-banner-section .details-carousel-main-container {
+    padding: 10px;
+    position: relative;
+}
+
+.home-banner-section .details-carousel-main-container .banner-details-carousel {
+    margin-bottom: 0;
+}
+
+.home-banner-section .details-carousel-main-container .banner-details-carousel .item .title {
+    margin-bottom: 0;
+    font-size: 30px;
+    padding-top: 35px;
+}
+
+.home-banner-section .details-carousel-main-container .banner-details-carousel .item .description {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.home-banner-section .banner-details-carousel .slick-btn {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border: 0;
+    background-color: white;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.home-banner-section .banner-details-carousel .slick-btn:focus {
+    outline: none;
+}
+
+.home-banner-section .banner-details-carousel .slick-btn.nextBtn {
+    left: auto;
+    right: 0;
+}
+
+.home-banner-section .banner-details-carousel .slick-btn.nextBtn:after {
+    content: '';
+    width: 50px;
+    border-top: 2px dashed var(--theme-color-1);
+    position: absolute;
+    top: 50%;
+    right: 120%;
+}
+
+.home-banner-section .banner-details-carousel .slick-btn.prevBtn {
+    right: auto;
+    left: 0;
+}
+
+.home-banner-section .banner-details-carousel .slick-btn.prevBtn:after {
+    content: '';
+    width: 50px;
+    border-top: 2px dashed var(--theme-color-1);
+    position: absolute;
+    top: 50%;
+    left: 120%;
+}
+
+.home-banner-section .banner-details-carousel .slick-dots {
+    bottom: auto;
+    top: 0;
+}
+
+.slick-dots li.slick-active button:before {
+    color: var(--theme-color-1);
+    opacity: 1;
+}
+
+.slick-dots li button:before {
+    font-size: 10px;
+}

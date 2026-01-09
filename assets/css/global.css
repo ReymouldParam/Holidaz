@@ -1,0 +1,78 @@
+/* Google fonts CDN */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Lato&family=Montserrat&family=Poppins&family=Playfair+Display&family=Merriweather&family=Oswald&family=Raleway&family=Source+Code+Pro&display=swap');
+
+:root {
+    --theme-color-1: #A7CD39;
+    --theme-color-2: #E52328;
+    --main-heading-font: sans-serif;
+    --sub-heading-font: cursive;
+    --body-text-font: sans-serif;
+    --std-padding: 40px;
+    --header-height: 100px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--body-text-font);
+    box-sizing: border-box;
+}
+
+.padding-x {
+    padding: 0 60px;
+}
+
+.clickable-text {
+    color: #0057FF;
+    cursor: pointer;
+}
+
+.center-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-text {
+    font-size: 14px;
+    color: #252525;
+    margin-bottom: 0;
+}
+
+.bg-cover{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-title-container{
+    text-align: center;
+}
+
+.section-title-container .section-title{
+    font-size: 36px;
+    font-weight: 500;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 0;
+}
+
+.section-title-container .section-title::before{
+    content: '';
+    width: 200px;
+    height: 3px;
+    background-color: var(--theme-color-1);
+    position: absolute;
+    bottom: 10px;
+    right: 110%;
+}
+.section-title-container .section-title::after{
+    content: '';
+    width: 200px;
+    height: 3px;
+    background-color: var(--theme-color-2);
+    position: absolute;
+    bottom: 10px;
+    left: 110%;
+}
