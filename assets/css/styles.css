@@ -157,3 +157,121 @@
 .slick-dots li button:before {
     font-size: 10px;
 }
+
+.home-tours-section .tours-carousel {
+    position: relative;
+}
+
+.home-tours-section .tours-carousel .item {
+    height: 250px;
+    padding: 0 25px;
+    margin: 50px 0;
+    transition: all 0.3s linear;
+}
+
+.home-tours-section .tours-carousel .item .image {
+    height: 100%;
+    width: 100%;
+    border: 15px solid rgb(240, 240, 240);
+    border-radius: 20px;
+}
+
+.home-tours-section .tours-carousel .slick-current .item {
+    scale: 1.4;
+}
+
+.home-tours-section .tours-carousel .slick-btn {
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    background-color: transparent;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: 0;
+    z-index: 3;
+    font-weight: 200;
+}
+
+.home-tours-section .tours-carousel .slick-btn.nextBtn {
+    right: 0;
+}
+
+.home-tours-section .tours-carousel .slick-btn.prevBtn {
+    right: 60px;
+}
+
+.visas-grid-container {
+    display: grid;
+    grid-template-columns: 30% 65%;
+    column-gap: 5%;
+}
+
+.visa-titles-carousel .item .title-container {
+    cursor: pointer;
+    padding: 20px 0;
+}
+
+.visa-titles-carousel .item .title-container .title {
+    color: #fff;
+    padding: 20px 30px;
+    background-color: #000;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    margin-bottom: 0;
+}
+
+.visa-titles-carousel .slick-current .item .title-container .title {
+    background-color: var(--theme-color-1);
+}
+
+.visa-values-carousel .item {
+    padding: 20px 0;
+}
+
+.visa-values-carousel .item .title {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.visa-values-carousel .item .map-image {
+    height: 400px;
+    margin: auto;
+}
+
+
+.home-offer-section .offer-grid-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    border: 2px solid var(--theme-color-1);
+    border-radius: 30px;
+}
+
+.offer-grid-container .image-container .image {
+    height: 100%;
+    border-radius: 30px;
+}
+
+.offer-grid-container .details-container {
+    padding: 30px 40px;
+}
+
+.offer-grid-container .details-container .title-1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: var(--theme-color-1);
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+.offer-grid-container .details-container .title-2 {
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 0;
+
+    .color {
+        color: var(--theme-color-1);
+    }
+}

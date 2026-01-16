@@ -24,12 +24,17 @@
         integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Font awosome CDN -->
+    <!-- Font family CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Mozilla+Headline:wght@200..700&display=swap"
         rel="stylesheet">
+
+    <!-- Font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -37,17 +42,43 @@
 
 <body>
 
+    <header class="header-main-container padding-x">
+        <div class="inner-container">
+            <div class="logo-container">
+                <img src="assets/images/logo.png" alt="" class="logo">
+            </div>
+
+            <div class="navbar-container">
+                <div class="item">
+                    <p class="link">Home</p>
+                </div>
+                <div class="item">
+                    <p class="link">About</p>
+                </div>
+                <div class="item">
+                    <p class="link">Visa & Insurance</p>
+                </div>
+                <div class="item">
+                    <p class="link">Customer</p>
+                </div>
+                <div class="item">
+                    <p class="link">Contact</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
     <section class="home-banner-section">
         <div class="inner-container">
             <div class="carousels-grid-container">
                 <div class="carousel-one-container">
                     <div class="banner-carousel-one">
                         <div class="item-carousel">
-                            <div class="image bg-cover" style="background-image: url(assets/images/carousel-img1.png);">
+                            <div class="image bg-cover" style="background-image: url(assets/images/carousel-image-3.webp);">
                             </div>
                         </div>
                         <div class="item-carousel">
-                            <div class="image bg-cover" style="background-image: url(assets/images/carousel-img2.png);">
+                            <div class="image bg-cover" style="background-image: url(assets/images/carousel-image-5.webp);">
                             </div>
                         </div>
                     </div>
@@ -63,21 +94,21 @@
                             <div class="carousel-two-container">
                                 <div class="item-carousel">
                                     <div class="image bg-cover"
-                                        style="background-image: url(assets/images/carousel-img1.png);"></div>
+                                        style="background-image: url(assets/images/carousel-image-4.webp);"></div>
                                 </div>
                                 <div class="item-carousel">
                                     <div class="image bg-cover"
-                                        style="background-image: url(assets/images/carousel-img2.png);"></div>
+                                        style="background-image: url(assets/images/carousel-image-6.webp);"></div>
                                 </div>
                             </div>
                             <div class="carousel-three-container">
                                 <div class="item-carousel">
                                     <div class="image bg-cover"
-                                        style="background-image: url(assets/images/carousel-img1.png);"></div>
+                                        style="background-image: url(assets/images/carousel-image-1.webp);"></div>
                                 </div>
                                 <div class="item-carousel">
                                     <div class="image bg-cover"
-                                        style="background-image: url(assets/images/carousel-img2.png);"></div>
+                                        style="background-image: url(assets/images/carousel-image-2.webp);"></div>
                                 </div>
                             </div>
                         </div>
@@ -116,8 +147,221 @@
                     places in the world. Our guides, administrators and a lot of other employees who form our team
                     understand what you need and try to make your tourist experience unforgettably outstanding.</p>
             </div>
+            <div class="">
+                <button class="unfilled-theme-btn-1">Explore <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <hr class="my-3">
         </div>
     </section>
+
+    <section class="home-tours-section padding-x">
+        <div class="inner-container">
+            <div class="section-title-container">
+                <h3 class="section-title">Holidaz Tours</h3>
+            </div>
+
+            <div class="py-4">
+                <div class="tours-carousel">
+                    <div class="item">
+                        <div class="image bg-cover" style="background-image: url(assets/images/carousel-img1.png);">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image bg-cover" style="background-image: url(assets/images/carousel-img1.png);">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image bg-cover" style="background-image: url(assets/images/carousel-img1.png);">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image bg-cover" style="background-image: url(assets/images/carousel-img1.png);">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image bg-cover" style="background-image: url(assets/images/carousel-img1.png);">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image bg-cover" style="background-image: url(assets/images/carousel-img1.png);">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <button class="unfilled-theme-btn-1">Explore <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <hr class="my-3">
+        </div>
+    </section>
+
+    <section class="home-visas-section padding-x">
+        <div class="inner-container">
+            <div class="section-title-container">
+                <h3 class="section-title">Visas & Insurance</h3>
+            </div>
+        </div>
+
+        <div class="py-2">
+            <div class="visas-grid-container">
+                <div class="visa-titles-container">
+                    <div class="visa-titles-carousel">
+                        <div class="item">
+                            <div class="title-container">
+                                <p class="title">Visa Guidance</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="title-container">
+                                <p class="title">Travel Insurance</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="title-container">
+                                <p class="title">Forex Assistance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="visa-values-container">
+                    <div class="visa-values-carousel">
+                        <div class="item">
+                            <img src="assets/images/map.png" alt="" class="map-image">
+                        </div>
+                        <div class="item">
+                            <div class="title-container">
+                                <p class="title">Travel Insurance</p>
+                            </div>
+                            <div class="para-container">
+                                <p class="para">Travel insurance is insurance that is intended to cover medical
+                                    expenses, trip cancellation, lost luggage, flight accident and other losses incurred
+                                    while traveling, either internationally or domestically.</p>
+                                <p class="para">Travel insurance can usually be arranged at the time of the booking of a
+                                    trip to cover exactly the duration of that trip, or a "multi-trip" policy can cover
+                                    an unlimited number of trips within a set time frame. Some policies offer lower and
+                                    higher medical-expense options; the higher ones are chiefly for countries that have
+                                    high medical costs, such as the United States.</p>
+                                <p class="para">here is no trade that can take place without the presence of forex, the
+                                    conversion of one country’s</p>
+                                <div class="d-flex">
+                                    <button class="unfilled-theme-btn-1 mr-3">Read More <i
+                                            class="fa-solid fa-arrow-right"></i></button>
+                                    <button class="unfilled-theme-btn-1">Travel Insurance Enquiry Form<i
+                                            class="fa-solid fa-arrow-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="title-container">
+                                <p class="title">Forex Assistance</p>
+                            </div>
+                            <div class="para-container">
+                                <p class="para">There is no trade that can take place without the presence of forex, the
+                                    conversion of one country’s currency into another. Whether it is for import and
+                                    export, travel, or purely for trading, foreign exchange is a necessity. In today’s
+                                    world, people frequent foreign countries either for work purpose or leisure.
+                                    Availing foreign exchange abroad may not be an easy task. Searching for the right
+                                    place to get a currency exchange can be a hurdle. Holidaz makes it easy for you to
+                                    exchange foreign currency through its online mode. So wherever in the world you are,
+                                    no longer do you have to depend upon any other source of foreign exchange Simply log
+                                    on to the Holidaz website and fill in the required details. Whether you wish to
+                                    purchase or sell foreign exchange, you can perform any transaction at your own
+                                    convenience. You also save yourself from exchanging your money at unreliable sources
+                                    and inflated prices.</p>
+                                <div class="">
+                                    <button class="unfilled-theme-btn-1">Read More <i
+                                            class="fa-solid fa-arrow-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="my-3">
+    </section>
+
+    <section class="home-offer-section padding-x mb-3">
+        <div class="inner-container">
+            <div class="offer-grid-container">
+                <div class="image-container">
+                    <div class="image bg-cover" style="background-image: url(assets/images/footer-bg.jpg);"></div>
+                </div>
+                <div class="details-container">
+                    <p class="title-1">30% OFF</p>
+                    <p class="title-2">Special Offer For <span class="color">Hongkon</span></p>
+
+                    <div class="py-4">
+                        <p class="para mb-0">Whether you're looking for a romantic getaway, a family-friendly adventure,
+                            or
+                            a solo journey to explore the world, a travel agency can provide you with a custom-tailored
+                            itinerary that exceeds your expectations.</p>
+                    </div>
+                    <div>
+                        <button class="unfilled-theme-btn-1">Book Now <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer-main-container bg-cover">
+        <div class="inner-container padding-x">
+            <div class="form-main-container">
+                <p class="form-title">Get In Touch</p>
+                <form action="">
+                    <div>
+                        <input type="text" placeholder="Enter Full Name" class="input">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Enter Mobile Number" class="input">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Enter Email Address" class="input">
+                    </div>
+                    <div>
+                        <textarea type="text" placeholder="Enter Message" class="input"></textarea>
+                    </div>
+                    <div>
+                        <button class="submit-btn">Send</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="details-container">
+                <p class="title-text">Enjoy Your Luxuries Trip With <img class="logo" src="assets/images/logo.png"
+                        alt=""></p>
+
+                <div>
+                    <div>
+                        <div class="contact-item mb-3">
+                            <button class="icon"><i class="fa-solid fa-location-dot"></i></button>
+                            <p class="text">3-6-475/3/A, Kalpavruksha, 1st Floor, Above HDFC Bank, Himayath Nagar
+                                Hyderabad - 500029.</p>
+                        </div>
+                        <div class="contact-item mb-3">
+                            <button class="icon"><i class="fa-solid fa-phone"></i></button>
+                            <p class="text">+91 81858 88000</p>
+                        </div>
+                        <div class="d-flex">
+                            <div class="contact-item mr-5">
+                                <button class="icon"><i class="fa-brands fa-instagram"></i></button>
+                                <p class="text">@holidaz</p>
+                            </div>
+                            <div class="contact-item">
+                                <button class="icon"><i class="fa-brands fa-facebook"></i></button>
+                                <p class="text">@holidaz</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
 
     <!-- JQuery JS CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -142,6 +386,7 @@
 
     <script>
         $(document).ready(function () {
+            // Banner carousels start
             $('.banner-carousel-one').slick({
                 dots: false,
                 infinite: true,
@@ -177,8 +422,43 @@
                 slidesToScroll: 1,
                 arrows: true,
                 asNavFor: ".banner-carousel-one, .carousel-two-container, .carousel-three-container",
-                nextArrow: '<button class="nextBtn slick-btn"><img src="assets/images/airplane-icon-right.png"></i></button>',
-                prevArrow: '<button class="prevBtn slick-btn"><img src="assets/images/airplane-icon-left.png"></i><i class="fa-solid fa-arrow-left"></i></i></button>',
+                nextArrow: '<button class="nextBtn slick-btn"><img src="assets/images/airplane-icon-right.png"></button>',
+                prevArrow: '<button class="prevBtn slick-btn"><img src="assets/images/airplane-icon-left.png"></button>',
+            });
+            // Banner carousels End
+
+            // tours carousel
+            $('.tours-carousel').slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                arrows: true,
+                centerMode: true,
+                centerPadding: '0',
+                nextArrow: '<button class="nextBtn slick-btn"><i class="fa-solid fa-arrow-right"></i></button>',
+                prevArrow: '<button class="prevBtn slick-btn"><i class="fa-solid fa-arrow-left"></i></button>'
+            });
+            // Visa carousel
+            $('.visa-titles-carousel').slick({
+                dots: false,
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows: true,
+                vertical: true,
+                verticalSwiping: true,
+                focusOnSelect: true,
+                asNavFor: '.visa-values-carousel'
+            });
+            $('.visa-values-carousel').slick({
+                dots: false,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                fade: true,
+                asNavFor: '.visa-titles-carousel'
             });
         });
 

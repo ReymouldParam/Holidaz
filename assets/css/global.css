@@ -1,5 +1,6 @@
 /* Google fonts CDN */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Lato&family=Montserrat&family=Poppins&family=Playfair+Display&family=Merriweather&family=Oswald&family=Raleway&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jura:wght@300..700&family=Mozilla+Headline:wght@200..700&display=swap');
 
 :root {
     --theme-color-1: #A7CD39;
@@ -18,8 +19,17 @@
     box-sizing: border-box;
 }
 
+button {
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
 .padding-x {
-    padding: 0 60px;
+    padding-left: 60px !important;
+    padding-right: 60px !important;
 }
 
 .clickable-text {
@@ -34,22 +44,22 @@
 }
 
 .page-text {
-    font-size: 14px;
+    font-size: 18px;
     color: #252525;
     margin-bottom: 0;
 }
 
-.bg-cover{
+.bg-cover {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.section-title-container{
+.section-title-container {
     text-align: center;
 }
 
-.section-title-container .section-title{
+.section-title-container .section-title {
     font-size: 36px;
     font-weight: 500;
     position: relative;
@@ -58,7 +68,7 @@
     margin-bottom: 0;
 }
 
-.section-title-container .section-title::before{
+.section-title-container .section-title::before {
     content: '';
     width: 200px;
     height: 3px;
@@ -67,7 +77,8 @@
     bottom: 10px;
     right: 110%;
 }
-.section-title-container .section-title::after{
+
+.section-title-container .section-title::after {
     content: '';
     width: 200px;
     height: 3px;
@@ -76,3 +87,180 @@
     bottom: 10px;
     left: 110%;
 }
+
+.unfilled-theme-btn-1 {
+    font-size: 20px;
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 1px solid #000;
+    color: #000;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+    i {
+        margin-left: 10px;
+        font-size: 20px;
+        rotate: 45deg;
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+.unfilled-theme-btn-1:hover {
+    color: var(--theme-color-1);
+
+    i {
+        color: var(--theme-color-1);
+        rotate: 0deg;
+        animation: leftToRight 1s infinite linear;
+    }
+}
+
+@keyframes leftToRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-10px);
+    }
+
+    50% {
+        transform: translateX(0px);
+    }
+
+    75% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+/* Header start */
+.header-main-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px;
+    background: #000000;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.93) 8%, rgba(0, 0, 0, 0.67) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.header-main-container .inner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header-main-container .logo-container {
+    height: 60px;
+
+    .logo {
+        height: 100%;
+    }
+}
+
+.header-main-container .navbar-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.header-main-container .navbar-container .item {
+    padding: 0 20px;
+}
+
+.header-main-container .navbar-container .link {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+
+}
+
+/* Header end */
+
+
+/* Footer start */
+.footer-main-container {
+    background-image: url(../images/footer-bg.jpg);
+    border-radius: 50px 50px 0 0;
+    overflow: hidden;
+}
+
+.footer-main-container .inner-container {
+    background-color: #000000b5;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.footer-main-container .form-main-container .form-title {
+    color: #FAFAFA;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.footer-main-container .form-main-container .input {
+    margin-bottom: 5px;
+    background-color: #fafafad6;
+    font-size: 16px;
+    padding: 4px 10px;
+    border-radius: 5px;
+    border: 0;
+    width: 100%;
+    color: #000;
+}
+
+.footer-main-container .form-main-container .submit-btn {
+    background-color: var(--theme-color-1);
+    width: 100%;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.footer-main-container .details-container {
+    padding-left: 40px;
+}
+
+.footer-main-container .details-container .title-text {
+    font-family: "Jura", sans-serif;
+    color: #fafafad6;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+
+    .logo {
+        height: 40px;
+        margin-left: 20px;
+    }
+}
+
+.footer-main-container .contact-item {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+
+    .icon {
+        background-color: transparent;
+        color: #fafafad6;
+        border: 0;
+        font-size: 20px;
+    }
+
+    .text {
+        color: #fafafad6;
+        margin-bottom: 0;
+        font-size: 20px;
+        margin-left: 10px;
+    }
+}
+
+/* Footer end */
