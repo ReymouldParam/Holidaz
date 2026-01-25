@@ -1,0 +1,59 @@
+.visas-banner-section{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/about-page-bg.webp);
+}
+
+.visas-banner-section .inner-container{
+    width: 100%;
+    height: 100%;
+    background-color: #00064840;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.visas-banner-section .content-container{
+    width: 1000px;
+    height: 500px;
+    background-color: #27272785;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    border: 1px solid #cbcbcbad;
+}
+
+
+.visa-titles-carousel .item .title-container .title{
+    font-size: 26px !important;
+}
+
+.visa-values-carousel .item{
+    height: 410px;
+    overflow: auto;
+}
+
+.visa-values-carousel .item::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+ .visa-values-carousel .item::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent;
+}
+ 
+/* Handle */
+.visa-values-carousel .item::-webkit-scrollbar-thumb {
+  background: #fafafab9; 
+  border-radius: 10px;
+}
+
+.visa-values-carousel .item .title{
+    color: #fff;
+}
+
+.visa-values-carousel .item .para{
+    color: #fff;
+}

@@ -1,0 +1,101 @@
+.about-banner-section{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/about-page-bg.webp);
+}
+
+.about-banner-section .inner-container{
+    width: 100%;
+    height: 100%;
+    background-color: #00064840;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.about-banner-section .content-container{
+    width: 1000px;
+    height: 500px;
+    background-color: #27272785;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    border: 1px solid #cbcbcbad;
+    display: grid;
+    grid-template-columns: 40% 60%
+}
+
+.about-banner-section .content-container .image-container{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.about-banner-section .content-container .image-container .image{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-image: url(../images/about-us-img-1.webp);
+}
+
+.about-banner-section .content-container .details-container{
+    padding: 20px;
+    height: 100%;
+    overflow: auto;
+}
+
+.about-banner-section .content-container .details-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+ .about-banner-section .content-container .details-container::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent;
+}
+ 
+/* Handle */
+.about-banner-section .content-container .details-container::-webkit-scrollbar-thumb {
+  background: #fafafab9; 
+  border-radius: 10px;
+}
+
+.about-banner-section .content-container .details-container .item{
+    margin-bottom: 10px;
+}
+
+.about-banner-section .content-container .details-container .item .title{
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.about-banner-section .content-container .details-container .item .data{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 200;
+}
+
+.about-banner-section .content-container .details-container .number-container{
+    display: flex;
+    gap: 10px;
+}
+
+.about-banner-section .content-container .details-container .number-container .number{
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 50%;
+    border: 0;
+    color: #fff;
+    background-color: var(--theme-color-1);
+    font-weight: 600;
+}
+
+.about-banner-section .content-container .details-container .number-container .number-title{
+    color: var(--theme-color-1);
+    font-size: 20px;
+    margin-bottom: 5px;
+}

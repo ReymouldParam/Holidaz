@@ -1,13 +1,11 @@
 /* Google fonts CDN */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Lato&family=Montserrat&family=Poppins&family=Playfair+Display&family=Merriweather&family=Oswald&family=Raleway&family=Source+Code+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jura:wght@300..700&family=Mozilla+Headline:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 :root {
     --theme-color-1: #A7CD39;
     --theme-color-2: #E52328;
-    --main-heading-font: sans-serif;
-    --sub-heading-font: cursive;
-    --body-text-font: sans-serif;
+    --main-heading-font: "DM Sans", sans-serif;
+    --body-text-font: "DM Sans", sans-serif;
     --std-padding: 40px;
     --header-height: 100px;
 }
@@ -116,6 +114,35 @@ button:focus {
     }
 }
 
+
+.unfilled-light-theme-btn-1 {
+    font-size: 20px;
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+    i {
+        margin-left: 10px;
+        font-size: 20px;
+        rotate: 45deg;
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+.unfilled-light-theme-btn-1:hover {
+    color: var(--theme-color-1);
+
+    i {
+        color: var(--theme-color-1);
+        rotate: 0deg;
+        animation: leftToRight 1s infinite linear;
+    }
+}
+
 @keyframes leftToRight {
     0% {
         transform: translateX(0);
@@ -179,7 +206,14 @@ button:focus {
     font-size: 18px;
     color: #fff;
     font-weight: 500;
-
+    text-decoration: none;
+}
+.header-main-container .navbar-container .link:hover{
+    color: var(--theme-color-1);
+}
+.header-main-container .navbar-container .link.active{
+    color: var(--theme-color-1);
+    font-weight: 600;
 }
 
 /* Header end */
@@ -188,7 +222,7 @@ button:focus {
 /* Footer start */
 .footer-main-container {
     background-image: url(../images/footer-bg.jpg);
-    border-radius: 50px 50px 0 0;
+    /* border-radius: 50px 50px 0 0; */
     overflow: hidden;
 }
 
