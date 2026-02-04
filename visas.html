@@ -112,7 +112,7 @@
                                         requirements to ensure a smooth and confident start to your journey.</p>
 
                                     <div class="row px-2 w-100">
-                                        <div class="col-4">
+                                        <div class="col-6 col-md-4">
                                             <div class="title-container">
                                                 <p class="title mb-1">Free Visas</p>
                                             </div>
@@ -126,7 +126,7 @@
                                                 <li class="para mb-0">Indonesia</li>
                                             </ul>
                                         </div>
-                                        <div class="col-4">
+                                        <div class="col-6 col-md-4">
                                             <div class="title-container">
                                                 <p class="title mb-1">Visa On Arrival</p>
                                             </div>
@@ -139,7 +139,7 @@
                                                 <li class="para mb-0">Cambodia (eVisa/Visa On Arrival)</li>
                                             </ul>
                                         </div>
-                                        <div class="col-4">
+                                        <div class="col-6 col-md-4">
                                             <div class="title-container">
                                                 <p class="title mb-1">Pre Arrival Visa</p>
                                             </div>
@@ -261,7 +261,8 @@
                         <input type="text" required name="name" placeholder="Enter Full Name*" class="input">
                     </div>
                     <div>
-                        <input type="text" required pattern="[0-9]{10}" name="number" placeholder="Enter Mobile Number*" class="input">
+                        <input type="text" required pattern="[0-9]{10}" name="number" placeholder="Enter Mobile Number*"
+                            class="input">
                     </div>
                     <div>
                         <input type="text" name="email" placeholder="Enter Email Address" class="input">
@@ -336,11 +337,32 @@
                 infinite: true,
                 slidesToShow: 3,
                 slidesToScroll: 1,
-                arrows: true,
+                arrows: false,
                 vertical: true,
                 verticalSwiping: true,
                 focusOnSelect: true,
-                asNavFor: '.visa-values-carousel'
+                asNavFor: '.visa-values-carousel',
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: { slidesToShow: 3 }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: { slidesToShow: 3 }
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 1,
+                            vertical: false,
+                            verticalSwiping: false,
+                            autoplay: true,
+                            autoplaySpeed: 15000,
+                            pauseOnHover: true
+                        }
+                    }
+                ]
             });
             $('.visa-values-carousel').slick({
                 dots: false,

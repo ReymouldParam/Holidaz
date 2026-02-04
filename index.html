@@ -240,6 +240,9 @@
                 </div>
             </div>
         </div>
+        <div class="padding-x">
+            <hr class="mb-3 mt-0">
+        </div>
     </section>
 
     <section class="home-about-section padding-x">
@@ -325,7 +328,7 @@
                                 <div class="row px-2">
                                     <div class="col-4">
                                         <div class="title-container">
-                                            <p class="title mb-1">Free Visas</p>
+                                            <p class="title mb-1 visa-g-title">Free Visas</p>
                                         </div>
                                         <ul class="contries-list">
                                             <li class="para mb-0">Fiji</li>
@@ -337,7 +340,7 @@
                                     </div>
                                     <div class="col-4">
                                         <div class="title-container">
-                                            <p class="title mb-1">Visa On Arrival</p>
+                                            <p class="title mb-1 visa-g-title">Visa On Arrival</p>
                                         </div>
                                         <ul class="contries-list">
                                             <li class="para mb-0">Madagascar</li>
@@ -349,7 +352,7 @@
                                     </div>
                                     <div class="col-4">
                                         <div class="title-container">
-                                            <p class="title mb-1">Pre Arrival Visa</p>
+                                            <p class="title mb-1 visa-g-title">Pre Arrival Visa</p>
                                         </div>
                                         <ul class="contries-list">
                                             <li class="para mb-0">Australia</li>
@@ -437,8 +440,11 @@
                             itinerary that exceeds your expectations.</p>
                     </div>
                     <div>
-                        <button class="unfilled-theme-btn-1">Contact Now <i
-                                class="fa-solid fa-arrow-right"></i></button>
+                        <a href="contact.html">
+                            <button class="unfilled-theme-btn-1">Contact Now <i
+                                    class="fa-solid fa-arrow-right"></i></button>
+                        </a>
+
                     </div>
                 </div>
             </div>
@@ -455,7 +461,8 @@
                         <input type="text" required name="name" placeholder="Enter Full Name*" class="input">
                     </div>
                     <div>
-                        <input type="text" required pattern="[0-9]{10}" name="number" placeholder="Enter Mobile Number*" class="input">
+                        <input type="text" required pattern="[0-9]{10}" name="number" placeholder="Enter Mobile Number*"
+                            class="input">
                     </div>
                     <div>
                         <input type="text" name="email" placeholder="Enter Email Address" class="input">
@@ -578,7 +585,27 @@
                 vertical: true,
                 verticalSwiping: true,
                 focusOnSelect: true,
-                asNavFor: '.visa-values-carousel'
+                asNavFor: '.visa-values-carousel',
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: { slidesToShow: 3 }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: { slidesToShow: 3 }
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 1,
+                            vertical: false,
+                            verticalSwiping: false,
+                            autoplay: true,
+                            autoplaySpeed: 4000
+                        }
+                    }
+                ]
             });
             $('.visa-values-carousel').slick({
                 dots: false,
@@ -644,7 +671,10 @@
                         },
                         {
                             breakpoint: 576,
-                            settings: { slidesToShow: 1 }
+                            settings: {
+                                slidesToShow: 1,
+                                dots: false
+                            }
                         }
                     ]
                 });

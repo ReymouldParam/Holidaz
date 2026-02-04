@@ -57,3 +57,35 @@
 .visa-values-carousel .item .para{
     color: #fff;
 }
+
+/* *************************** */
+/*         Media Queries      */
+/* ************************* */
+
+/* Large laptop */
+@media screen and (max-width:1400px) {
+}
+/* Small laptop */
+@media screen and (max-width:1200px) {
+}
+/* Tablet */
+@media screen and (max-width:992px) {
+}
+@media screen and (max-width:768px) {  
+    .visas-banner-section .content-container{
+        width: 95vw;
+        height: 550px;
+    }
+}
+/* Large mobile */
+@media screen and (max-width:576px) {  
+}
+/* Small mobile */
+@media screen and (max-width:375px) {
+}
+@media screen and (max-width:320px) {
+}
+
+/* *************************** */
+/*         Media Queries END     */
+/* ************************* */

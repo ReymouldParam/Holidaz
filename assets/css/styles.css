@@ -1,13 +1,11 @@
 .home-banner-section {
     height: 100vh;
     width: 100%;
-    padding: 15px;
 }
 
 .home-banner-section .inner-container {
     width: 100%;
     height: 100%;
-    border-radius: 40px;
     overflow: hidden;
 }
 
@@ -194,7 +192,7 @@
     backface-visibility: hidden;
 }
 
-.home-tours-section .tours-carousel .item .image .title-container{
+.home-tours-section .tours-carousel .item .image .title-container {
     text-align: center;
     background-color: #000000be;
     width: 100%;
@@ -202,7 +200,7 @@
     padding: 5px;
 }
 
-.home-tours-section .tours-carousel .item .image .title-container .title{
+.home-tours-section .tours-carousel .item .image .title-container .title {
     margin-bottom: 0;
     color: #fff;
     font-weight: 600;
@@ -263,7 +261,7 @@
     padding: 20px 0;
 }
 
-.visa-values-carousel .contries-list{
+.visa-values-carousel .contries-list {
     padding-left: 15px;
 }
 
@@ -312,3 +310,126 @@
         color: var(--theme-color-1);
     }
 }
+
+/* *************************** */
+/*         Media Queries      */
+/* ************************* */
+
+/* Large laptop */
+@media screen and (max-width:1400px) {}
+
+/* Small laptop */
+@media screen and (max-width:1200px) {}
+
+/* Tablet */
+@media screen and (max-width:992px) {}
+
+@media screen and (max-width:768px) {
+    .home-banner-section{
+        height: auto;
+    }
+    .home-banner-section .carousels-grid-container {
+        grid-template-columns: 100%;
+    }
+
+    .home-banner-section .right-carousel-main-container {
+        display: none;
+    }
+
+    .home-banner-section .carousels-grid-container .carousel-one-container {
+        height: 70vh;
+    }
+
+    .home-banner-section .banner-details-carousel .slick-btn.nextBtn:after, .home-banner-section .banner-details-carousel .slick-btn.prevBtn:after{
+        width: 20px;
+    }
+
+    .home-banner-section .details-carousel-main-container .banner-details-carousel .item .title {
+        font-size: 25px;
+    }
+
+    .home-banner-section .carousels-grid-container .carousel-one-container .overlay-container {
+        padding: 25px;
+    }
+
+    .home-banner-section .carousels-grid-container .carousel-one-container .overlay-container .main-title {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .home-tours-section .tours-carousel .slick-current .item {
+        scale: 1;
+    }
+
+    .home-tours-section .tours-carousel .item {
+        height: 450px;
+        padding: 0;
+        margin: 0 0 20px 0;
+    }
+
+    .home-tours-section .tours-carousel .item .image .title-container .title {
+        font-size: 20px;
+    }
+
+    .visas-grid-container {
+        grid-template-columns: 100%;
+        column-gap: 0;
+        row-gap: 0;
+        margin-top: 10px;
+    }
+
+    .visa-titles-carousel .item .title-container {
+        padding: 0 5px;
+    }
+
+    .visa-titles-carousel .item .title-container .title {
+        font-size: 25px;
+        padding: 10px 20px;
+    }
+
+    .visa-values-carousel .item .title {
+        font-size: 20px;
+    }
+
+    .visa-values-carousel .item .col-4 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .visa-values-carousel .item .visa-g-title {
+        font-size: 16px;
+    }
+
+    .home-offer-section .offer-grid-container {
+        grid-template-columns: 100%;
+    }
+
+    .offer-grid-container .image-container .image {
+        height: 300px;
+        border-radius: 30px 30px 0 0;
+    }
+
+    .offer-grid-container .details-container {
+        padding: 20px;
+    }
+
+    .offer-grid-container .details-container .title-2 {
+        font-size: 30px;
+    }
+
+    .offer-grid-container .details-container .title-1 {
+        font-size: 50px;
+    }
+}
+
+/* Large mobile */
+@media screen and (max-width:576px) {}
+
+/* Small mobile */
+@media screen and (max-width:375px) {}
+
+@media screen and (max-width:320px) {}
+
+/* *************************** */
+/*         Media Queries END     */
+/* ************************* */

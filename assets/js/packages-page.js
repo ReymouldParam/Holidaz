@@ -75,6 +75,23 @@ $(document).ready(function () {
             centerPadding: '0',
             nextArrow: '<button class="nextBtn slick-btn"><img src="assets/images/airplane-icon-right.png"></button>',
             prevArrow: '<button class="prevBtn slick-btn"><img src="assets/images/airplane-icon-left.png"></button>',
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: { slidesToShow: 3 }
+                },
+                {
+                    breakpoint: 768,
+                    settings: { slidesToShow: 1 }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                        dots: false
+                    }
+                }
+            ]
         });
     }
 
