@@ -1,7 +1,7 @@
 const packages = [
   {
     id: 1,
-    imagePath: 'assets/images/carousel-image-1.webp',
+    imagePath: 'assets/images/packages/rovaneimi.webp',
     countryName: 'Finland',
     packageName: 'Rovaniemi',
     shortContent: 'Positioned at the edge of the Arctic Circle, Rovaniemi offers snow-covered forests, vast skies, and a composed winter atmosphere shaped by seasonal light and quiet natural rhythm.',
@@ -9,7 +9,7 @@ const packages = [
   },
   {
     id: 2,
-    imagePath: 'assets/images/carousel-image-1.webp',
+    imagePath: 'assets/images/packages/santa-village.webp',
     countryName: 'Finland',
     packageName: 'Santa Claus Village',
     shortContent: 'A refined Arctic destination that blends cultural symbolism with calm winter surroundings, offering tradition in a composed, unhurried, and thoughtfully curated setting.',
@@ -17,7 +17,7 @@ const packages = [
   },
   {
     id: 3,
-    imagePath: 'assets/images/carousel-image-1.webp',
+    imagePath: 'assets/images/packages/kakslauttanen.webp',
     countryName: 'Finland',
     packageName: 'Kakslauttanen',
     shortContent: 'An immersive Arctic retreat offering privacy, silence, and uninterrupted views of the night sky, designed for travelers seeking stillness and understated comfort.',
@@ -25,7 +25,7 @@ const packages = [
   },
   {
     id: 4,
-    imagePath: 'assets/images/carousel-image-1.webp',
+    imagePath: 'assets/images/packages/Da-Nang.webp',
     countryName: 'Vietnam',
     packageName: 'Da Nang',
     shortContent: 'A contemporary coastal city offering relaxed beaches, open boulevards, and a balanced pace that blends modern living with easy access to culture and nature.',
@@ -33,7 +33,7 @@ const packages = [
   },
   {
     id: 5,
-    imagePath: 'assets/images/carousel-image-1.webp',
+    imagePath: 'assets/images/packages/Hoi-An.webp',
     countryName: 'Vietnam',
     packageName: 'Hoi An',
     shortContent: 'A preserved heritage town defined by lantern-lit streets, riverfront charm, and a slow, reflective pace that encourages unhurried exploration.',
@@ -41,7 +41,7 @@ const packages = [
   },
   {
     id: 6,
-    imagePath: 'assets/images/carousel-image-1.webp',
+    imagePath: 'assets/images/packages/Phu-Quoc.webp',
     countryName: 'Vietnam',
     packageName: 'Phu Quoc',
     shortContent: 'A tropical island shaped by open beaches, warm waters, and natural restraint, offering privacy, space, and a calm, uncluttered environment.',
@@ -49,7 +49,7 @@ const packages = [
   },
   {
     id: 7,
-    imagePath: 'assets/images/carousel-image-1.webp',
+    imagePath: 'assets/images/packages/masai-mara.webp',
     countryName: 'Kenya & Tanzania',
     packageName: 'Masai Mara',
     shortContent: 'Vast open savannahs offering natural wildlife encounters, wide horizons, and a sense of scale that remains unchanged by time.',
@@ -57,23 +57,15 @@ const packages = [
   },
   {
     id: 8,
-    imagePath: 'assets/images/carousel-image-1.webp',
+    imagePath: 'assets/images/packages/Ngorongoro-Crater.webp',
     countryName: 'Kenya & Tanzania',
     packageName: 'Ngorongoro Crater',
     shortContent: 'A dramatic natural sanctuary offering close wildlife encounters within a vast volcanic landscape that feels both contained and immense.',
     fullContent: 'Ngorongoro Crater is a vast volcanic basin containing a complete ecosystem within its walls. The enclosed landscape creates an environment where wildlife encounters feel immediate and intimate, set against a powerful geological backdrop. The contrast between scale and containment gives the destination a distinctive character. Movement within the crater feels deliberate and focused, enhancing observation and presence. Ngorongoro offers a safari experience that is visually dramatic and deeply immersive.'
   },
   {
-    id: 9,
-    imagePath: 'assets/images/carousel-image-1.webp',
-    countryName: 'Kenya & Tanzania',
-    packageName: 'Masai Mara & Ngorongoro',
-    shortContent: 'A balanced safari journey combining open plains and enclosed landscapes, offering varied perspectives, scenery, and wildlife experiences.',
-    fullContent: 'Together, Masai Mara and Ngorongoro Crater form a complete and balanced safari experience. The openness of the savannah contrasts with the contained drama of the crater, offering variety in landscape, movement, and wildlife encounters. This combination allows travelers to experience different ecological rhythms within a single journey. The experience feels immersive and unforced, shaped by nature rather than itinerary pressure. It is well-suited for travelers seeking depth, contrast, and perspective.'
-  },
-  {
     id: 10,
-    imagePath: 'assets/images/carousel-image-1.webp',
+    imagePath: 'assets/images/packages/Conrad.webp',
     countryName: 'Maldives',
     packageName: 'Conrad Maldives',
     shortContent: 'An iconic island retreat known for architectural distinction, marine integration, and refined experiences set within expansive lagoons.',
@@ -81,7 +73,7 @@ const packages = [
   },
   {
     id: 11,
-    imagePath: 'assets/images/carousel-image-1.webp',
+    imagePath: 'assets/images/packages/Pullman.webp',
     countryName: 'Maldives',
     packageName: 'Pullman Maldives',
     shortContent: 'A contemporary all-inclusive island experience offering space, structure, and modern comfort with an emphasis on ease and balance.',
@@ -89,7 +81,7 @@ const packages = [
   },
   {
     id: 12,
-    imagePath: 'assets/images/carousel-image-1.webp',
+    imagePath: 'assets/images/packages/iru-veli.webp',
     countryName: 'Maldives',
     packageName: 'Sunsiyam Iruveli',
     shortContent: 'A vibrant yet relaxed island resort blending contemporary design with wide lagoons and a more expressive atmosphere.',
@@ -97,7 +89,7 @@ const packages = [
   },
   {
     id: 13,
-    imagePath: 'assets/images/carousel-image-1.webp',
+    imagePath: 'assets/images/packages/San-Francisco.webp',
     countryName: 'United States',
     packageName: 'San Francisco',
     shortContent: 'A visually distinctive city shaped by hills, coastline, and layered neighborhoods, offering culture, creativity, and coastal character.',
@@ -105,7 +97,7 @@ const packages = [
   },
   {
     id: 14,
-    imagePath: 'assets/images/carousel-image-1.webp',
+    imagePath: 'assets/images/packages/Niagara-Falls.webp',
     countryName: 'United States',
     packageName: 'Niagara Falls',
     shortContent: 'A powerful natural landmark defined by scale, sound, and movement, offering an immediate and sensory experience.',
@@ -113,7 +105,7 @@ const packages = [
   },
   {
     id: 15,
-    imagePath: 'assets/images/carousel-image-1.webp',
+    imagePath: 'assets/images/packages/Washington.webp',
     countryName: 'United States',
     packageName: 'Washington, D.C.',
     shortContent: 'A city of symmetry and monumentality, offering structured avenues, cultural institutions, and a reflective urban atmosphere.',
@@ -121,7 +113,7 @@ const packages = [
   },
   {
     id: 16,
-    imagePath: 'assets/images/carousel-image-1.webp',
+    imagePath: 'assets/images/packages/sydney.webp',
     countryName: 'Australia',
     packageName: 'Sydney',
     shortContent: 'A harbour-defined city blending architectural icons, coastal landscapes, and relaxed sophistication.',
@@ -129,7 +121,7 @@ const packages = [
   },
   {
     id: 17,
-    imagePath: 'assets/images/carousel-image-1.webp',
+    imagePath: 'assets/images/packages/Great-Barrier-Reef.webp',
     countryName: 'Australia',
     packageName: 'Great Barrier Reef',
     shortContent: 'A vast marine ecosystem offering coral formations, marine life, and natural clarity across tropical waters.',
@@ -137,7 +129,7 @@ const packages = [
   },
   {
     id: 18,
-    imagePath: 'assets/images/carousel-image-1.webp',
+    imagePath: 'assets/images/packages/Hamilton-Island.webp',
     countryName: 'Australia',
     packageName: 'Hamilton Island',
     shortContent: 'A refined island escape offering calm beaches, gentle waters, and effortless movement between land and sea.',
@@ -145,7 +137,7 @@ const packages = [
   },
   {
     id: 19,
-    imagePath: 'assets/images/carousel-image-1.webp',
+    imagePath: 'assets/images/packages/Franz-Josef-Glacier.webp',
     countryName: 'New Zealand',
     packageName: 'Franz Josef Glacier',
     shortContent: 'A dramatic landscape where ice meets rainforest, offering raw contrast and ever-changing natural form.',
@@ -153,7 +145,7 @@ const packages = [
   },
   {
     id: 20,
-    imagePath: 'assets/images/carousel-image-1.webp',
+    imagePath: 'assets/images/packages/Mount-Cook.webp',
     countryName: 'New Zealand',
     packageName: 'Mount Cook',
     shortContent: 'An alpine environment defined by clarity, scale, and silence, offering deep calm and visual purity.',
@@ -161,7 +153,7 @@ const packages = [
   },
   {
     id: 21,
-    imagePath: 'assets/images/carousel-image-1.webp',
+    imagePath: 'assets/images/packages/Milford-Sound.webp',
     countryName: 'New Zealand',
     packageName: 'Milford Sound',
     shortContent: 'A timeless landscape of towering cliffs, deep waters, and mist-filled stillness.',

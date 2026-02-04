@@ -250,21 +250,21 @@
         <div class="inner-container padding-x">
             <div class="form-main-container">
                 <p class="form-title">Get In Touch</p>
-                <form action="">
+                <form action="contact-page.php" method="post">
                     <div>
-                        <input type="text" placeholder="Enter Full Name" class="input">
+                        <input type="text" required name="name" placeholder="Enter Full Name*" class="input">
                     </div>
                     <div>
-                        <input type="text" placeholder="Enter Mobile Number" class="input">
+                        <input type="text" required pattern="[0-9]{10}" name="number" placeholder="Enter Mobile Number*" class="input">
                     </div>
                     <div>
-                        <input type="text" placeholder="Enter Email Address" class="input">
+                        <input type="text" name="email" placeholder="Enter Email Address" class="input">
                     </div>
                     <div>
-                        <textarea type="text" placeholder="Enter Message" class="input"></textarea>
+                        <textarea type="text" name="message" placeholder="Enter Message" class="input"></textarea>
                     </div>
                     <div>
-                        <button class="submit-btn">Send</button>
+                        <button class="submit-btn" type="submit">Send</button>
                     </div>
                 </form>
             </div>
