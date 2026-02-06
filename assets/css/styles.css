@@ -330,7 +330,7 @@
     will-change: transform;
     backface-visibility: hidden;
     perspective: 1000px;
-    height: 310px;
+    height: 320px;
 }
 
 .home-testimonal-section .testimonial-carousel .item .inner-container {
@@ -417,7 +417,22 @@
 @media screen and (max-width:1200px) {}
 
 /* Tablet */
-@media screen and (max-width:992px) {}
+@media screen and (max-width:992px) {
+    .visa-titles-carousel .item .title-container .title {
+        padding: 15px 20px;
+        background-color: rgb(0, 0, 0);
+        font-size: 24px;
+    }
+
+    .home-testimonal-section .testimonial-carousel .item {
+        padding: 0 10px;
+        margin: 20px 0;
+    }
+
+    .home-testimonal-section .testimonial-carousel .slick-current .item {
+        scale: 1;
+    }
+}
 
 @media screen and (max-width:768px) {
     .home-banner-section {

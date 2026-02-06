@@ -242,7 +242,7 @@ button:focus {
     display: block;
     width: 100%;
     height: 6px;
-    background: #fff;
+    background: #343434;
     border-radius: 2px;
     transition: transform 0.25s ease, opacity 0.25s ease;
 }
@@ -290,6 +290,10 @@ button:focus {
         padding: 10px 20px;
         margin: 5px 0;
         border-radius: 5px;
+    }
+
+    .header-main-container .navbar-container .link{
+        color: #fff;
     }
 
     .burger {
@@ -402,7 +406,20 @@ button:focus {
 /* Tablet */
 @media screen and (max-width:992px) {}
 
-@media screen and (max-width:768px) {}
+@media screen and (max-width:768px) {
+    .section-title-container .section-title::before,
+    .section-title-container .section-title::after {
+        width: 70px;
+    }
+
+    .footer-main-container .details-container .title-text {
+        font-size: 25px;
+    }
+
+    .footer-main-container .contact-item .text {
+        font-size: 15px;
+    }
+}
 
 /* Large mobile */
 @media screen and (max-width:576px) {

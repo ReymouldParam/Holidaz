@@ -70,6 +70,9 @@
 }
 /* Tablet */
 @media screen and (max-width:992px) {
+    .visas-banner-section .content-container{
+        width: 95vw;
+    }
 }
 @media screen and (max-width:768px) {  
     .visas-banner-section .content-container{

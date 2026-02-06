@@ -202,7 +202,11 @@
 @media screen and (max-width:1200px) {}
 
 /* Tablet */
-@media screen and (max-width:992px) {}
+@media screen and (max-width:992px) {
+    .packages-banner-section .content-container {
+        width: 95vw;
+    }
+}
 
 @media screen and (max-width:768px) {
     .packages-banner-section .content-container {

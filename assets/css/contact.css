@@ -109,6 +109,9 @@
 }
 /* Tablet */
 @media screen and (max-width:992px) {
+    .contact-banner-section .content-container{
+        width: 95vw;
+    }
 }
 @media screen and (max-width:768px) {  
     .contact-banner-section .content-container{
