@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $dropMessage = htmlspecialchars(trim($_POST['message'] ?? ''));
 
     // Set email recipients
-    $to = "revanth.danduboina@reymould.com";
+    $to = "packages@holidaz.com";
     $subject = "Enquiry from Holidaz Website";
     $body = "Name: $name\nEmail: $email\nNumber: $number\nMessage:\n$dropMessage";
 
@@ -16,9 +16,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     // Redirect based on success or failure
     if ($mailStatus) {
-        header("Location: .?emailSuccess=true");
+        header("Location: .");
     } else {
-        header("Location: .?emailSuccess=false");
+        header("Location: .");
     }
     exit;
 }
