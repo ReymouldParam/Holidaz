@@ -64,30 +64,6 @@ const packages = [
     fullContent: 'Ngorongoro Crater is a vast volcanic basin containing a complete ecosystem within its walls. The enclosed landscape creates an environment where wildlife encounters feel immediate and intimate, set against a powerful geological backdrop. The contrast between scale and containment gives the destination a distinctive character. Movement within the crater feels deliberate and focused, enhancing observation and presence. Ngorongoro offers a safari experience that is visually dramatic and deeply immersive.'
   },
   {
-    id: 10,
-    imagePath: 'assets/images/packages/Conrad.webp',
-    countryName: 'Maldives',
-    packageName: 'Conrad Maldives',
-    shortContent: 'An iconic island retreat known for architectural distinction, marine integration, and refined experiences set within expansive lagoons.',
-    fullContent: 'Conrad Maldives is recognized for its architectural clarity and close relationship with the surrounding marine environment. Overwater villas, expansive lagoons, and thoughtful spatial design create an experience that feels refined yet connected to nature. Signature elements such as underwater dining enhance the sense of place without overwhelming it. The resort balances innovation with restraint, offering privacy, comfort, and a calm island rhythm.'
-  },
-  {
-    id: 11,
-    imagePath: 'assets/images/packages/Pullman.webp',
-    countryName: 'Maldives',
-    packageName: 'Pullman Maldives',
-    shortContent: 'A contemporary all-inclusive island experience offering space, structure, and modern comfort with an emphasis on ease and balance.',
-    fullContent: 'Pullman Maldives presents a modern interpretation of island living. Spacious villas, curated dining, and wellness-oriented design allow guests to experience the Maldives with clarity and ease. The all-inclusive structure is thoughtfully managed, ensuring comfort without excess. The environment remains calm and well-composed, supporting both relaxation and quiet indulgence throughout the stay.'
-  },
-  {
-    id: 12,
-    imagePath: 'assets/images/packages/iru-veli.webp',
-    countryName: 'Maldives',
-    packageName: 'Sunsiyam Iruveli',
-    shortContent: 'A vibrant yet relaxed island resort blending contemporary design with wide lagoons and a more expressive atmosphere.',
-    fullContent: 'Sunsiyam Iruveli combines modern design with open spaces and expansive lagoons. The atmosphere is relaxed yet expressive, offering a more social interpretation of island luxury. Despite its vibrancy, the resort maintains comfort, privacy, and thoughtful spatial flow. It suits travelers seeking energy and engagement while retaining the essential calm of the Maldives.'
-  },
-  {
     id: 13,
     imagePath: 'assets/images/packages/San-Francisco.webp',
     countryName: 'United States',
@@ -158,5 +134,14 @@ const packages = [
     packageName: 'Milford Sound',
     shortContent: 'A timeless landscape of towering cliffs, deep waters, and mist-filled stillness.',
     fullContent: 'Milford Sound is defined by dramatic vertical cliffs and calm, deep waters. Waterfalls, mist, and slow movement create a sense of isolation and natural grandeur. The experience feels timeless, offering quiet immersion in one of New Zealand’s most striking environments.'
+  },
+  {
+    id: 22,
+    imagePath: 'assets/images/packages/Japan.webp',
+    countryName: 'Japan & South Korea',
+    packageName: 'Japan & South Korea',
+    shortContent: 'A culturally layered journey blending ancient temples, historic palaces, and contemporary cities shaped by precision, design, and tradition.',
+    fullContent: 'Japan and South Korea together create a journey defined by cultural depth and modern refinement. Ancient temples, serene gardens, and seasonal landscapes in Japan contrast beautifully with South Korea’s historic palaces, mountain backdrops, and design-led cities. Travel flows between quiet heritage districts and dynamic urban environments, offering balance in pace and perspective. Tradition and innovation coexist seamlessly across both destinations, expressed through architecture, cuisine, and daily life. The experience feels immersive yet structured, allowing travelers to engage with two distinct cultural identities within a single, harmonious East Asian narrative shaped by precision, respect, and aesthetic clarity.'
   }
+
 ];

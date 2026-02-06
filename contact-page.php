@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $dropMessage = htmlspecialchars(trim($_POST['message'] ?? ''));
 
     // Set email recipients
-    $to = "contact@reymould.com";
+    $to = "revanth.danduboina@reymould.com";
     $subject = "Enquiry from Holidaz Website";
     $body = "Name: $name\nEmail: $email\nNumber: $number\nMessage:\n$dropMessage";
 

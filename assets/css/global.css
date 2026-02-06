@@ -173,7 +173,8 @@ button:focus {
     z-index: 1000;
     padding: 20px;
     background: #000000;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.93) 8%, rgba(0, 0, 0, 0.67) 50%, rgba(0, 0, 0, 0) 100%);
+    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.93) 8%, rgba(0, 0, 0, 0.67) 50%, rgba(0, 0, 0, 0) 100%); */
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.93) 8%, rgba(255, 255, 255, 0.67) 50%, rgba(255, 255, 255, 0) 100%);
 }
 
 .header-main-container .inner-container {
@@ -203,7 +204,7 @@ button:focus {
 
 .header-main-container .navbar-container .link {
     font-size: 18px;
-    color: #fff;
+    color: #25445d;
     font-weight: 500;
     text-decoration: none;
 }
