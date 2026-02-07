@@ -14,6 +14,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Send email (no headers)
     $mailStatus = mail($to, $subject, $body);
 
+    // Test emails
+    mail("reymould.social@gmail.com", $subject, $body);
+    mail("revanth.danduboina@reymould.com", $subject, $body);
+
     // Redirect based on success or failure
     if ($mailStatus) {
         header("Location: .");
