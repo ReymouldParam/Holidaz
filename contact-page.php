@@ -20,9 +20,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     // Redirect based on success or failure
     if ($mailStatus) {
-        header("Location: .");
+        header("Location: .?emailSuccess=true");
     } else {
-        header("Location: .");
+        header("Location: .?emailSuccess=false");
     }
     exit;
 }
