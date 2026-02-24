@@ -467,7 +467,8 @@
             </div>
 
             <div class="py-4">
-                <div class="testimonial-carousel">
+                <div class="testimonial-carousel" id="testimonialCarousel"></div>
+                <!-- <div class="testimonial-carousel">
                     <div class="item">
                         <div class="inner-container">
                             <div class="image-container">
@@ -595,7 +596,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -689,6 +690,7 @@
     <!-- Custom Script tags -->
     <script src="assets/js/global.js"></script>
     <script src="assets/js/packages-list.js"></script>
+    <script src="assets/js/testimonials-list.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -751,13 +753,13 @@
                     },
                     {
                         breakpoint: 768,
-                        settings: { 
+                        settings: {
                             slidesToShow: 1,
                             vertical: false,
                             verticalSwiping: false,
                             autoplay: true,
                             autoplaySpeed: 4000
-                         }
+                        }
                     },
                     {
                         breakpoint: 576,
@@ -779,36 +781,6 @@
                 arrows: true,
                 fade: true,
                 asNavFor: '.visa-titles-carousel'
-            });
-
-            $('.testimonial-carousel').slick({
-                autoplay: true,
-                autoplaySpeed: 4000,
-                dots: true,
-                infinite: true,
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                arrows: true,
-                centerMode: true,
-                centerPadding: '0',
-                nextArrow: '<button class="nextBtn slick-btn"><i class="fa-solid fa-arrow-right"></i></button>',
-                prevArrow: '<button class="prevBtn slick-btn"><i class="fa-solid fa-arrow-left"></i></button>',
-                responsive: [
-                    {
-                        breakpoint: 992,
-                        settings: { slidesToShow: 3 }
-                    },
-                    {
-                        breakpoint: 768,
-                        settings: { slidesToShow: 1 }
-                    },
-                    {
-                        breakpoint: 576,
-                        settings: {
-                            slidesToShow: 1
-                        }
-                    }
-                ]
             });
         });
 
@@ -877,6 +849,85 @@
             renderToursCarousel();
 
         });
+    </script>
+
+    <script>
+        const container = document.getElementById("testimonialCarousel");
+
+        function generateStars(count) {
+            let stars = "";
+            for (let i = 0; i < count; i++) {
+                stars += `<span class="star">
+                  <i class="fa-solid fa-star"></i>
+                </span>`;
+            }
+            return stars;
+        }
+
+        function renderTestimonials() {
+            let html = "";
+
+            testimonials.forEach(t => {
+                html += `
+        <div class="item">
+          <div class="inner-container">
+
+            <div class="image-container">
+              <div class="image bg-cover"
+                   style="background-image: url(${t.imagePath});">
+              </div>
+            </div>
+
+            <div class="title-container">
+              <p class="name">${t.fullName}</p>
+              <!-- <div class="d-flex m-auto">
+                ${generateStars(t.noOfStars)}
+              </div> -->
+            </div>
+
+            <div class="details-container">
+              <p class="data">${t.content}</p>
+            </div>
+
+          </div>
+        </div>
+      `;
+            });
+
+            container.innerHTML = html;
+        }
+
+        renderTestimonials();
+
+        $('.testimonial-carousel').slick({
+                autoplay: true,
+                autoplaySpeed: 4000,
+                dots: true,
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows: true,
+                centerMode: true,
+                centerPadding: '0',
+                nextArrow: '<button class="nextBtn slick-btn"><i class="fa-solid fa-arrow-right"></i></button>',
+                prevArrow: '<button class="prevBtn slick-btn"><i class="fa-solid fa-arrow-left"></i></button>',
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: { slidesToShow: 3 }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: { slidesToShow: 1 }
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
     </script>
 
 </body>

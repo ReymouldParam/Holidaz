@@ -351,6 +351,7 @@
 .home-testimonal-section .testimonial-carousel .item .inner-container .image-container .image {
     width: 70px;
     height: 70px;
+    background-size: contain;
 }
 
 .home-testimonal-section .testimonial-carousel .item .inner-container .title-container {
