@@ -218,7 +218,7 @@ button:focus {
 }
 
 .header-main-container .navbar-container .link.active {
-    color: var(--theme-color-1);
+    color: var(--theme-color-2);
     font-weight: 600;
 }
 
