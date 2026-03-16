@@ -11,12 +11,18 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $subject = "Enquiry from Holidaz Website";
     $body = "Name: $name\nEmail: $email\nNumber: $number\nMessage:\n$dropMessage";
 
+    // Email headers
+    $headers = "From: Holidaz Website <noreply@holidaz.com>\r\n";
+    $headers .= "Reply-To: $email\r\n";
+    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+    $headers .= "X-Mailer: PHP/" . phpversion();
+
     // Send email (no headers)
-    $mailStatus = mail($to, $subject, $body);
+    $mailStatus = mail($to, $subject, $body, $headers);
 
     // Test emails
-    mail("reymould.social@gmail.com", $subject, $body);
-    mail("revanth.danduboina@reymould.com", $subject, $body);
+    mail("reymould.social@gmail.com", $subject, $body, $headers);
+    mail("revanth.danduboina@reymould.com", $subject, $body, $headers);
 
     // Redirect based on success or failure
     if ($mailStatus) {
