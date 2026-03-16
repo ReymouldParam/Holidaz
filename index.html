@@ -869,29 +869,14 @@
 
             testimonials.forEach(t => {
                 html += `
-        <div class="item">
-          <div class="inner-container">
-
-            <div class="image-container">
-              <div class="image bg-cover"
-                   style="background-image: url(${t.imagePath});">
-              </div>
-            </div>
-
-            <div class="title-container">
-              <p class="name">${t.fullName}</p>
-              <!-- <div class="d-flex m-auto">
-                ${generateStars(t.noOfStars)}
-              </div> -->
-            </div>
-
-            <div class="details-container">
-              <p class="data">${t.content}</p>
-            </div>
-
-          </div>
-        </div>
-      `;
+                    <div class="item">
+                    <div class="inner-container">
+                        <div class="image-container">
+                        <img class="image" src="${t.imagePath}" alt="testimonial">
+                        </div>
+                    </div>
+                    </div>
+                `;
             });
 
             container.innerHTML = html;
@@ -923,7 +908,8 @@
                     {
                         breakpoint: 576,
                         settings: {
-                            slidesToShow: 1
+                            slidesToShow: 1,
+                            dots: false
                         }
                     }
                 ]

@@ -330,14 +330,9 @@
     will-change: transform;
     backface-visibility: hidden;
     perspective: 1000px;
-    height: 320px;
 }
 
 .home-testimonal-section .testimonial-carousel .item .inner-container {
-    background-color: #fff;
-    box-shadow: 0 0 5px lightgray;
-    padding: 20px;
-    border-radius: 20px;
     transition: all 0.4s linear;
     height: 100%;
 }
@@ -349,38 +344,9 @@
 }
 
 .home-testimonal-section .testimonial-carousel .item .inner-container .image-container .image {
-    width: 70px;
-    height: 70px;
+    width: 250px;
+    height: auto;
     background-size: contain;
-}
-
-.home-testimonal-section .testimonial-carousel .item .inner-container .title-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.home-testimonal-section .testimonial-carousel .item .inner-container .title-container .name {
-    text-transform: capitalize;
-    margin-bottom: 0;
-    font-size: 16px;
-}
-
-.home-testimonal-section .testimonial-carousel .item .inner-container .title-container .star {
-    font-size: 13px;
-    margin: 0 1px;
-    color: gold;
-}
-
-.home-testimonal-section .testimonial-carousel .item .inner-container .details-container .data {
-    text-align: center;
-    font-size: 10px;
-    margin-bottom: 0;
-}
-
-.home-testimonal-section .testimonial-carousel .slick-current .item .inner-container {
-    background-color: #FFF5F5;
-    box-shadow: 0 0 5px #E52328;
 }
 
 .home-testimonal-section .testimonial-carousel .slick-current .item {
